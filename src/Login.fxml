@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="463.0" prefWidth="660.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutY="1.0" prefHeight="557.0" prefWidth="860.0" stylesheets="@login.css">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="430.0" style="-fx-background-color: #224499;" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/loginlogo.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Welcom to my fistr app FX" textFill="#e8cbe2">
+                     <font>
+                        <Font name="Sakkal Majalla Bold" size="47.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets top="-30.0" />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="557.0" prefWidth="428.0" style="-fx-background-color: #ffff;" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Preloader.gif" />
+                           </image>
+                        </ImageView>
+                        <Label text="Sing In" textFill="#749aae">
+                           <font>
+                              <Font name="Comic Sans MS" size="51.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TextField disable="true" floatText="Username " prefHeight="69.0" prefWidth="315.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <PasswordField prefHeight="24.0" prefWidth="314.0" text="Password">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="NONE" />
+                           </cursor>
+                        </PasswordField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="368.0" spacing="70.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="49.0" prefWidth="125.0" styleClass="btn-login" text="Login" textFill="#48b5c6">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="36.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="49.0" prefWidth="125.0" styleClass="btn-login" text="Exite" textFill="#4bbdbf">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="35.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
